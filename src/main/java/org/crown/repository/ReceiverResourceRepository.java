@@ -1,5 +1,6 @@
 package org.crown.repository;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.crown.domain.ReceiverResource;
@@ -58,4 +59,11 @@ public interface ReceiverResourceRepository extends MongoRepository<ReceiverReso
      * @return
      */
 	Optional<ReceiverResource> findByReceiverAndResourceType(ReceiverSupplier receiver, ResourceType resourceType);
+
+    /**
+     * Finds a list of receiverResource asked for a specific resourceType
+     * @param resourceType
+     * @return
+     */
+	List<ReceiverResource> findAllByResourceType(ResourceType resourceType);
 }

@@ -60,4 +60,10 @@ public interface SupplierResourceRepository extends MongoRepository<SupplierReso
      */
 	Optional<SupplierResource> findBySupplierAndResourceType(ReceiverSupplier supplier, ResourceType resourceType);
 
+    /**
+     * Finds a list of supplierResource asked for a specific resourceType
+     * @param resourceType
+     * @return
+     */
+    List<SupplierResource> findAllByResourceType(ResourceType resourceType);
 }

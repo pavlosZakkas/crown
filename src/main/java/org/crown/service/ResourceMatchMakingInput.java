@@ -15,8 +15,6 @@ public class ResourceMatchMakingInput {
 
     private List<ReceiverResource> receiverResources;
 
-    private List<Claim> claims;
-
     public ResourceType getResourceType() {
         return resourceType;
     }
@@ -41,11 +39,4 @@ public class ResourceMatchMakingInput {
         this.receiverResources = receiverResources;
     }
 
-    public List<Claim> getClaims() {
-        return claims;
-    }
-
-    public void setClaims(List<Claim> claims) {
-        this.claims = claims;
-    }
 }
