@@ -22,7 +22,7 @@ spring:
   data:
     mongodb:
       host: localhost
-      port: 0
+      port: 27017
       database: crown
     elasticsearch:
       properties:
