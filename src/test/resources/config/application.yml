@@ -29,11 +29,7 @@ spring:
         path:
           home: target/elasticsearch
   mail:
-    host: email-smtp.ca-central-1.amazonaws.com
-    port: 25
-    username: ${SES_SMTP_USERNAME}
-    password: ${SES_SMTP_PASSWORD}
-
+    host: localhost
   main:
     allow-bean-definition-overriding: true
   messages:
@@ -57,7 +53,7 @@ spring:
 
 azure:
   accountName: crownwebapp
-  endpoint: https://crownwebapp.blob.core.windows.net
+  endpoint: https://test-endpoint.net
   accountKey: ${AZURE_ACCOUNT_KEY}
 
 server:
@@ -82,7 +78,7 @@ jhipster:
       port: 5000
       queue-size: 512
   mail:
-    from: info@needmoremed.com
+    from: test@localhost
     base-url: http://127.0.0.1:8080
   security:
     remember-me:
