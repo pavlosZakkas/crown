@@ -1,9 +1,10 @@
-package org.crown.service;
+package org.crown.service.resource.matching;
 
 import org.crown.domain.ReceiverResource;
 import org.crown.domain.ResourceMatch;
 import org.crown.domain.ResourceType;
 import org.crown.domain.SupplierResource;
+import org.crown.service.MaxHeap;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;

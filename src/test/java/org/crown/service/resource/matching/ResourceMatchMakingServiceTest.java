@@ -1,4 +1,4 @@
-package org.crown.service;
+package org.crown.service.resource.matching;
 
 import org.crown.domain.ResourceMatch;
 import org.crown.domain.ResourceType;

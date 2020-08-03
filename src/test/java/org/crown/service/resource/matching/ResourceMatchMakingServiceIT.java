@@ -1,4 +1,4 @@
-package org.crown.service;
+package org.crown.service.resource.matching;
 
 import org.crown.CrownApp;
 import org.crown.domain.ReceiverResource;
