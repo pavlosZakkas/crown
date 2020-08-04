@@ -40,7 +40,7 @@ public class ResourceMatchMakingServiceIT {
     private ReceiverResourceRepository receiverResourceRepository;
 
     @Autowired
-    private ResourceMatchMakingService resourceMatchMakingService;
+    private ResourceMatchMakingScheduler resourceMatchMakingScheduler;
 
     @BeforeEach
     public void init() {
@@ -64,7 +64,7 @@ public class ResourceMatchMakingServiceIT {
         );
         supplierResourceRepository.saveAll(supplierResources);
 
-        resourceMatchMakingService.matchResourcesFor(FACE_SHIELD);
+        resourceMatchMakingScheduler.run();
 
         List<ResourceMatch> resourceMatches = resourceMatchRepository.findAll();
         assertThat(resourceMatches.size()).isEqualTo(3);
